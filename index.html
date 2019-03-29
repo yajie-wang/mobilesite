@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="logo">My site</h1>
+        <div id="mobilenav"><a href="#">&#9776;</a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col c50">
+                <h2>headline</h2>
+                <img src="assets/img/daniel-olah-1465552-unsplash.jpg" alt="1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum nisi deleniti adipisci assumenda eligendi, temporibus blanditiis facilis sequi, iste laborum quos quae magnam voluptatum officia, sapiente pariatur repudiandae explicabo obcaecati.
+                </p>
+            </div>
+            <div class="col c25">
+                <h2>headline</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum nisi deleniti adipisci assumenda eligendi, temporibus blanditiis facilis sequi, iste laborum quos quae magnam voluptatum officia, sapiente pariatur repudiandae explicabo obcaecati.
+                </p>
+            </div>
+            <div class="col c25">
+                <h2>headline</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum nisi deleniti adipisci assumenda eligendi, temporibus blanditiis facilis sequi, iste laborum quos quae magnam voluptatum officia, sapiente pariatur repudiandae explicabo obcaecati.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $('#mobilenav').click(function () {
+            $('nav').toggle();
+        });
+
+        $(window).resize(function () {
+            if (window.innerWidth > 575) {
+                $('nav').show();
+            };
+        });
+    </script>
+</body>
+
+</html>
